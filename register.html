@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+label
+{
+width:100px;
+display:inline-block;
+border:0;
+}
+.a
+{
+border:3px solid black;
+padding:25px;
+width:300px;
+margin-left:350px;
+
+}
+h3
+{
+padding-left:50px;
+}
+.b
+{
+margin-left:125px;
+}
+</style>
+<script>
+document.getElementById("btn").onclick = fun;
+function fun()
+{
+
+var s;
+s=document.getElementById("phone");
+var phoneno = /^\d{10}$/;
+  if((!(s.value.match(phoneno)))
+        {
+        var toast = new iqwerty.toast.Toast();
+
+toast.setText('coorect phoneno!').show();
+     
+        }
+}
+</script>
+</head>
+<body>
+<div class="a">
+<h3>REGISTRATION</h3>
+<form method="post" action="inser.php">
+<label>Name</label>
+<input type="text"  name="name" required><br><br>
+<label>Password</label>
+<input type="password"   name="pass" required><br><br>
+<label>Email</label>
+<input type="email"     name="email" required><br><br>
+<label>Contact-No</label>
+<input type="text"  id="phone"   name="phone" required><br><br>
+<input type="submit"  id="btn" class ="b" value="submit">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<head>
+<title>Form submission</title>
+<style>
+
+
+label{
+   display:inline-block;
+width:15%;
+}
+
+#a
+{
+margin-left:0%;
+}
+
+input[type=radio]{
+ 
+  margin-left:15%;
+}
+
+.c
+{
+background-color:#FFE4E1;
+
+width:60%;
+height:100%;
+float:left;
+margin-left:30%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="c">
+<h1> Need blood to save lifes</h1>
+
+<form action="bloodreq1.php" method="POST">
+<label>Patient name:</label>
+<input type="text" name="name" required><br><br>
+<label>gender:</label>
+<input type="radio" name="gender" value="male"  id="a">male<br>
+<input type="radio" name="gender" value="female" >female<br>
+<input type="radio" name="gender" value="others" >others<br>
+<label>Age:</label>
+<input type="number" name="age" required ><br><br>
+<label>Email-id:</label>
+<input type="email" name="email" required ><br><br>
+<label>Needed Blood group:</label>
+<input type="text" name="bgroup" ><br><br>
+<label>Need unit of Blood:</label>
+<input type="number" name="ub" ><br><br>
+<label>Required date:</label>
+<input type="date" name="date"><br><br>
+
+<label>Hospital name:</label>
+<input type="text" name="hos"><br><br>
+<label>Doctor name:</label>
+<input type="text" name="doc"><br><br>
+<label>country:</label>
+<select name="country" class="a">
+<option value="india">India</option>
+<option value="china">china</option>
+<option value="england">england</option>
+</select><br><br>
+<label>state:</label>
+<select name="state" class="a">
+<option value="tamil nadu">Tamil nadu</option>
+<option value="salem">salem</option>
+<option value="chennai">chennai</option>
+</select><br><br>
+<label>address:</label>
+<textarea name="detail" row="10" column="10" class="a">
+</textarea><br><br><br>
+<label>Reason:</label>
+<textarea name="reason" row="10" column="10 class="a"">
+</textarea>
+<br><br>
+<label>Contact-no:</label>
+<input type="text" name="contact" minlength="10" maxlength="10" required><br><br>
+<label></label><input type="submit" name="submit">
+<a href="index.html"><input type="button" value="cancel"></a><br><br>
+
+
+</form>
+</div>
+</body>
+</html> 

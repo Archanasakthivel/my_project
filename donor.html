@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+
+label{
+    display: inline-block;
+width:10%;
+}
+#a
+{
+margin-left:0%;
+}
+
+input[type=radio]{
+ 
+  margin-left:10%;
+}
+
+.c
+{
+background-image:url('blood.gif');
+background-repeat:no-repeat;
+width:60%;
+height:100%;
+float:left;
+margin-left:30%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="c">
+<h1>         Join us to login</h1>
+<form action="donordb.php" method="POST">
+<label>Name:</label>
+<input type="text" name="name" required><br><br>
+<label>Email-id:</label>
+<input type="email" name="email" required ><br><br>
+<label>Gender:</label>
+<input type="radio" name="gender" value="male" id="a">male<br>
+<input type="radio" name="gender" value="female" >female<br>
+<input type="radio" name="gender" value="others" >others<br>
+
+<label>Blood group:</label>
+<select name="name">
+<option value="O+">O+
+<option value="A+">A+
+<option value="B+">B+
+<option value="O-">O-
+<option value="B-">B-
+</select><br><br>
+<label>Date-of-birth:</label>
+<input type="date" name="date" required><br><br>
+<label>Country:</label>
+<select name="country" class="a">
+<option value="india">India</option>
+<option value="china">china</option>
+<option value="england">england</option>
+</select><br><br>
+<label>State:</label>
+<select name="state" class="a">
+<option value="tamil nadu">Tamil nadu</option>
+<option value="salem">salem</option>
+<option value="chennai">chennai</option>
+</select><br><br>
+<label >Address:</label>
+<textarea name="detail" row="10" column="10" class="a" required>
+</textarea><br>
+<br><br>
+<label>Contact-no:</label>
+<input type="text" name="contact" minlength="10" maxlength="10" required><br><br>
+<label></label>
+<input type="submit">
+<a href="index.html"><input type="button" value="cancel"></a><br><br>
+</form>
+</div>
+
+
+
+</body>
+</html>
